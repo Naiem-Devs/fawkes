@@ -1,0 +1,42 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+    .team_wrp.owl-carousel.owl-loaded.owl-drag {
+        margin: auto;
+        max-width: 902px;
+    }
+    
+    .hero_link {
+        right: 3%;
+    }
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+.title.club_right p {
+    width: 410px;
+}
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+
+ 
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}

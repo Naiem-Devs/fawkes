@@ -86,7 +86,43 @@
     }
   });
 
+// Animation
 
+  AOS.init({
+    disable: 'mobile', 
+    debounceDelay: 50, 
+    throttleDelay: 99, 
+    offset: 120,
+    delay: 0, 
+    duration: 800, 
+    easing: 'ease', 
+});
+
+
+    // Parallex Effect
+    function ParallexEffect() { 
+      let clubArea = document.querySelector('.club-area');
+      let ImgsBlk  = document.querySelectorAll('.club-wrp .clubImgBlk');
+      window.addEventListener('scroll', () => { 
+          let windowScrolled  = window.scrollY;
+          console.log(window.innerWidth)
+          if (window.innerWidth > 992) { 
+              let BlkFromTop      = clubArea.offsetTop;  
+              let BlkHeight       = clubArea.clientHeight;
+              ImgsBlk[0].style.top  = "-"+((windowScrolled) / 3)+"px";
+              ImgsBlk[1].style.top  = "-"+((windowScrolled) / 5)+"px"; 
+          }else{
+              ImgsBlk[0].style.top  = "0px";
+              ImgsBlk[1].style.top  = "0px"; 
+          }
+      
+      })
+  
+    }
+    ParallexEffect()
+
+
+    // nav bar Active Function
 
   const navBtn = document.querySelectorAll('.menu-area ul a')
 
@@ -102,6 +138,15 @@
           navBtns.classList.remove('active')
       })
   }
+  
+  const mbBtn = document.querySelectorAll('.md_nav a')
+
+  mbBtn.forEach(mbBtns => {
+      mbBtns.addEventListener('click', () => {
+          const menuClass = document.querySelector('.mobile-menu')
+          menuClass.classList.remove('siteBar')
+      })
+  })
   
  
 })(jQuery);

@@ -19,20 +19,544 @@
 .title.club_right p {
     width: 410px;
 }
+
+.team_wrp.owl-carousel.owl-loaded.owl-drag {
+    max-width: 930px;
+    margin: auto;
+}
+
+.owl-next {
+    position: unset;
+}
+
+.owl-prev {
+    position: unset;
+}
+
+.owl-nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    max-width: 100px;
+    justify-content: space-between;
+    width: 100px;
+    transform: translateX(-50%);
+}
+.rdmap_blk h4 {
+    margin-bottom: 0;
+    height: 50px;
+    width: 290px;
+}
+
+span.box_line {
+    width: 80%;
+}
+.hero_link {
+    right: 2%;
+}
+
+.hero_img:before {
+    transform: rotate(278deg) translate(-50%, -50%);
+    top: 0;
+    left: auto;
+    right: 12%;
+    width: 100px;
+}
+
 }
 
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .title h1 {font-size: 60px;}
 
+    section.newsletter .title h1 {
+        width: 700px;
+    }
+    
+    .hero_title {
+        height: unset;
+        width: max-content;
+        margin: auto;
+    }
+    
+    section.hero-area .row {
+        flex-direction: column-reverse;
+    }
+    
+    i.glich_img {
+        max-width: 428px;
+        margin: auto;
+        height: 515px;
+    }
+    
+    i.glich_img {}
+    
+    i.glich_img {}
+    
+    .hero_img:before {
+        width: 100px;
+        transform: rotate(97deg) translate(-50%, -50%);
+        left: 20%;
+        top: 8%;
+    }
+    
+    .hero_link {
+        right: 2%;
+    }
+    
+    .title.club_right {
+        margin: auto;
+    }
+    
+    .club-left {
+        max-width: 500px;
+        margin: auto;
+        height: 619px;
+        margin-top: 271px;
+    }
+    section#Features .row {
+        flex-direction: column-reverse;
+    }
+    
+    .Features_right {
+        margin: auto;
+        margin-bottom: 70px;
+    }
+    
+    section#club {
+        margin-bottom: -60px;
+    }
+    
+    span.box_line {
+        display: none;
+    }
+    
+    section.specs-area .title h1:after {
+        width: 176px;
+    }
+    
+    section#Faq {
+        margin-top: -60px;
+    }
+    
+    .accordion-item {
+        padding: 20px;
+    }
+    
+    .FAQ_collaps button {
+        padding-bottom: 20px;
+    }
+    .owl-next {
+        position: unset;
+    }
+    
+    .owl-prev {
+        position: unset;
+    }
+    
+    .owl-nav {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        max-width: 100px;
+        justify-content: space-between;
+        width: 100px;
+        transform: translateX(-50%);
+    }
+    section#Features .row {
+        flex-direction: column-reverse;
+    }
+    
+    .Features_right {
+        margin: auto;
+        margin-bottom: 70px;
+    }
+    
+    section#club {
+        margin-bottom: -60px;
+    }
+    
+    span.box_line {
+        display: none;
+    }
+    
+    section.specs-area .title h1:after {
+        width: 176px;
+    }
+    
+    section#Faq {
+        margin-top: -60px;
+    }
+    
+    .accordion-item {
+        padding: 20px;
+    }
+    
+    .FAQ_collaps button {
+        padding-bottom: 20px;
+    }
+    
+    section#Roadmap {
+        margin-top: -100px;
+    }
+    
+    .gdn-bdr:after {
+        width: 294px;
+    }
+    
+    .rdmap_blk {
+        margin-bottom: 70px;
+    }
+    img#club2_img {
+        top: -20px;
+    }
+    
+    .club-top {
+        margin-top: -102px;
+    }
 
 }
 
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    .title h1 {font-size: 30px;}
 
- 
+.hero_title .title h1 {
+    font-size: 35px;
+}
+
+.rdmap_blk h4 {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+    section.newsletter .title h1 {
+        width: 300px;
+    }
+    
+    .hero_title {
+        height: unset;
+        width: max-content;
+        margin: auto;
+    }
+    
+    section.hero-area .row {
+        flex-direction: column-reverse;
+    }
+    
+    i.glich_img {
+        max-width: 428px;
+        margin: auto;
+        width: 100%;
+        height: 346px;
+    }
+    
+    i.glich_img {}
+    
+    i.glich_img {}
+    
+    .hero_img:before {
+        width: 46px;
+        transform: rotate(185deg) translate(-50%, 16%);
+        left: 20%;
+        top: -27%;
+        display: none;
+    }
+    
+    .hero_link {
+        right: 2%;
+        display: none;
+    }
+
+div#footer_link {
+    display: block;
+}
+    
+    .title.club_right {
+        margin: auto;
+    }
+    
+    .club-left {
+        max-width: 500px;
+        margin: auto;
+        height: 374px;
+        margin-top: 91px;
+        margin-bottom: 20px;
+    }
+    section#Features .row {
+        flex-direction: column-reverse;
+    }
+    
+    .Features_right {
+        margin: auto;
+        margin-bottom: 70px;
+    }
+    
+    section#club {
+    }
+    
+    span.box_line {
+        display: none;
+    }
+    
+    section.specs-area .title h1:after {
+        width: 176px;
+    }
+    
+    section#Faq {
+        margin-top: -10px;
+    }
+    
+    .accordion-item {
+        padding: 20px;
+    }
+    
+    .FAQ_collaps button {
+        padding-bottom: 20px;
+    }
+    .owl-next {
+        position: unset;
+    }
+    
+    .owl-prev {
+        position: unset;
+    }
+    
+    .owl-nav {
+        display: flex;
+        position: absolute;
+        left: 55%;
+        bottom: 14px;
+        justify-content: space-between;
+        width: 84px;
+        transform: translateX(-50%);
+    }
+    section#Features .row {
+        flex-direction: column-reverse;
+    }
+    
+    .Features_right {
+        margin: auto;
+        margin-bottom: 70px;
+        width: 100%;
+        max-width: 350px;
+    }
+
+.Features_right img {
+    width: 100%;
+}
+
+.Features_right imf {}
+    
+    section#club {
+        margin-bottom: 0px;
+        padding-top: 0;
+    }
+    
+    span.box_line {
+        display: none;
+    }
+    
+    section.specs-area .title h1:after {
+        width: 176px;
+    }
+    
+    section#Faq {
+    }
+    
+    .accordion-item {
+        padding: 15px;
+    }
+    
+    .FAQ_collaps button {
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 15px;
+        padding-left: 1px;
+        padding-right: 5px;
+    }
+    
+    section#Roadmap {
+        margin: 0px;
+    }
+
+section#Roadmap .title {
+    margin-bottom: 60px;
+}
+    
+    .gdn-bdr:after {
+        width: 160px;
+        bottom: 0;
+    }
+    
+    .rdmap_blk {
+        margin-bottom: 50px;
+    }
+    .club-wrp {
+        width: 100%;
+        margin: auto;
+        margin-top: 0;
+        max-width: 350px;
+    }
+
+.club-wrp img {
+    width: 100% !important;
+}
+
+img#club1-2 {
+    margin-bottom: 10px;
+    width: 80% !important;
+}
+
+img#club2-1 {
+    margin-top: 10px;
+    width: 80% !important;
+}
+    .snap-left img {
+        width: 100%;
+    }
+    
+    .snap-right img {
+        width: 100%;
+    }
+    .title p {
+        max-width: 300px !important;
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+.title.club_right p {
+    /* max-width: 300px !important; */
+}
+    .title h2{
+        font-size: 30px;
+    }
+
+.bdr:after {
+    bottom: -11px;
+}
+    a.btn{
+    font-size: 13px;
+    width: 134px;
+    height: 45px;
+}
+
+section {
+    padding-top: 100px;
+}
+
+section#team {
+    margin-top: -30px;
+}
+
+section.specs-area {
+    margin-bottom: 0;
+    margin-top: -50px;
+}
+
+section#Features {
+    margin-bottom: 0;
+}
+.title h4 {
+    font-size: 20px;
+}
+
+img#club2_img {
+    left: 0;
+    top: 0;
+    max-width: 380px;
+}
+
+section.hero-area {
+    margin-top: 83px;
+    margin-bottom: 0;
+}
+
+.logo-area img {
+    width: 135px;
+}
+
+.header-area {
+    padding: 15px 0 10px;
+}
+
+.glitch-title {
+    width: max-content;
+    margin: auto;
+}
+
+.club-top.clubImgBlk {
+    width: 50%;
+    margin-top: -73px;
+}
+
+.club-btm.clubImgBlk {
+    width: 50%;
+    margin-left: 10px;
+}
+.rdmap_blk span {
+    font-size: 24px;
+    width: 100px;
+    height: 61px;
+    margin-bottom: 22px;
+}
+
+.rdmap_blk span small {
+    transform: translate(3px, 8px);
+    font-size: 11px;
+}
+
+.specs_blk.rd {
+    margin-bottom: 35px;
+}
+
+.specs_wrp {
+    margin-top: 35px;
+}
+
+.FAQ_collaps {
+    margin-top: 15px;
+}
+
+.accordion-button::after {
+    background-size: 17px;
+}
+
+.FAQ_collaps .accordion-body p {
+    margin-bottom: 0;
+}
+
+section.newsletter .title p {
+    font-size: 16px;
+}
+
+footer.footer {
+    margin-bottom: 10px;
+}
+.owl-dots {
+    width: max-content;
+    margin: auto;
+}
+.specs_blk i{
+    width: 260px;
+}
+.specs_blk{
+    margin-bottom: 45px;
+    width: max-content;
+}
+.user {
+    width: max-content;
+    margin: auto;
+}
+.team_wrp.owl-carousel.owl-loaded.owl-drag {
+    margin-top: 0;
+}
 }
  
 /* Large Mobile screen :480px. */

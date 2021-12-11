@@ -166,6 +166,17 @@ a.active:after {
 .menu-area nav ul li a.active:after {
     /* opacity: 1; */
 }
+a.mb_logo {
+  display: block;
+  position: absolute;
+  width: 136px;
+  left: 10%;
+  top: 25px;
+}
+
+a.mb_logo img {
+  width: 100%;
+}
 .menu-area nav ul li a.theme-btn {
   background: white;
   display: inline-block;
@@ -204,8 +215,8 @@ a.active:after {
 .mobile-menu {
   position: fixed;
   width: 320px;
-  height: 100vh;
-  background: #ffffff;
+  height: 100%;
+  background: #000000;
   z-index: 99;
   box-shadow: 0px 0px 9px -1px #737373;
   top: 0;
@@ -229,10 +240,12 @@ a.active:after {
 }
 
 .mobile-menu nav ul li a {
-  color: #272835;
+  color: #ffffff;
   font-size: 16px;
   line-height: 40px;
   transition: .3s;
+  font-family: 'KillerTech';
+  letter-spacing: 2px;
 }
 
 .mobile-menu nav ul li a:hover { 
@@ -280,12 +293,11 @@ a.active:after {
   top: 15px;
   width: 40px;
   height: 40px;
-  background: #ff4900;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  font-size: 22px;
-  color: #fff;
+  font-size: 35px;
+  color: var(--sky);
   box-shadow: 0px 0px 17px -2px #0000004a;
 }
 
@@ -382,15 +394,25 @@ a.btn {font-size: 19px;font-weight: 700;border: 2px solid #F11421;box-sizing: bo
 }
 .club-left {position: relative;height: 394px;}
 
-.club-wrp {display: flex;margin-top: 35px;width: 400px;justify-content: space-between;}
+.club-wrp {
+  display: flex;
+  margin-top: 225px;
+  width: 400px;
+  justify-content: space-between;
+  position: relative;
+  top: 80px;
+  }
 
-.club-wrp img {
-}
+  
+  .clubImgBlk {
+    position: relative; 
+  }
+
 
 img#club2_img {
     position: absolute;
     left: 13%;
-    top: -11%;
+    top: -60%;
     max-width: 620px;
     width: 100%;
     pointer-events: none;
@@ -402,7 +424,7 @@ img#club1-2 {
     margin-bottom: 20px;
 }
 
-.club-btm {margin-top: 56px;margin-left: 20px;}
+.club-btm {margin-top: -48px;margin-left: 20px;}
 
 img#club2-1 {width: max-content;margin-top: 20px;margin-left: auto;display: block;}
 .glt {
@@ -417,7 +439,7 @@ img#club2-1 {width: max-content;margin-top: 20px;margin-left: auto;display: bloc
 }
 
 .title.club_right p {
-    max-width: 500px;
+    max-width: 420px;
 }
 .bdr {position: relative;width: max-content;margin: auto;margin-bottom: 30px;}
 
@@ -438,6 +460,10 @@ img#Features {
     top: 50px;
 }
 .team-area {margin-bottom: 10px;position: relative;}
+
+section.team-area .title {
+    position: relative;
+}
 
 .team-area .title p {
     max-width: 670px;
@@ -636,6 +662,11 @@ span.box_line {
 }
 .specs-area {
     margin-bottom: -80px;
+}
+
+section.specs-area .title h1:after {
+    width: 240px;
+    right: 0;
 }
 .specs_wrp {display: flex;justify-content: space-around;flex-wrap: wrap;margin-top: 70px;}
 
